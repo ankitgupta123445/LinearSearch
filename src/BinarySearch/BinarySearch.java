@@ -11,6 +11,7 @@ public class BinarySearch {
                         int mid = (startIndex + endIndex) / 2;
                         if (array[mid] == number) {
                                 response = mid;
+                                break;
                         }
                         if (array[mid] < number) {
                                 startIndex = mid + 1;
