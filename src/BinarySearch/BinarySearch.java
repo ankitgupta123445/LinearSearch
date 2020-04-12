@@ -1,4 +1,5 @@
 package BinarySearch;
+
 import Exception.NumberNotFoundException;
 
 import java.util.Arrays;
@@ -13,15 +14,17 @@ public class BinarySearch {
                         int mid = (startIndex + endIndex) / 2;
                         if (array[mid] == number) {
                                 response = mid;
-                                break;
                         }
                         if (array[mid] < number) {
                                 startIndex = mid + 1;
-                        }
-                        if (array[mid] > number) {
+                        } else {
                                 endIndex = mid - 1;
                         }
                 }
-                return response;
+                if (response == -1) {
+                        throw new NumberNotFoundException(number + "is not found in the array");
+                } else {
+                        return response;
+                }
         }
 }

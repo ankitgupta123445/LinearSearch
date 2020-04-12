@@ -27,7 +27,7 @@ public class Main {
                                 try {
                                         LinearSearch linearSearch = new LinearSearch();
                                         int index = linearSearch.search(array, number);
-                                        System.out.println(number + "is found at the" + index);
+                                        System.out.println(number + "is found at the index" + index);
                                 } catch (NumberNotFoundException e) {
                                         System.out.println(e.getMessage());
                                 }
@@ -36,7 +36,7 @@ public class Main {
                                 try {
                                         BinarySearch binarySearch = new BinarySearch();
                                         int index = binarySearch.search(array, number);
-                                        System.out.println(number + "is found at the" + index);
+                                        System.out.println(number + "is found at the index" + index);
                                 } catch (NumberNotFoundException e) {
                                         System.out.println(e.getMessage());
                                 }
