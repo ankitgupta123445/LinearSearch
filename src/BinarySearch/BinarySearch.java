@@ -2,11 +2,8 @@ package BinarySearch;
 
 import Exception.NumberNotFoundException;
 
-import java.util.Arrays;
-
 public class BinarySearch {
         public int search(int[] array, int number) throws NumberNotFoundException {
-                Arrays.sort(array);
                 int response = -1;
                 int startIndex = 0;
                 int endIndex = array.length - 1;
@@ -22,7 +19,7 @@ public class BinarySearch {
                         }
                 }
                 if (response == -1) {
-                        throw new NumberNotFoundException(number + "is not found in the array");
+                        throw new NumberNotFoundException(number + " is not found in the array");
                 } else {
                         return response;
                 }

@@ -12,7 +12,7 @@ public class LinearSearch {
                         }
                 }
                 if (response == -1)
-                        throw new NumberNotFoundException(number + "is not found in the array");
+                        throw new NumberNotFoundException(number + " is not found in the array");
                 else
                         return response;
         }
