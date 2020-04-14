@@ -33,8 +33,12 @@ public class Main {
                                 }
                                 break;
                         case 2:
+                                BinarySearch binarySearch = new BinarySearch();
+                                System.out.println("In binary search array must be sorted.");
+                                System.out.print("sorted array :");
+                                Arrays.sort(array);
+                                System.out.println(Arrays.toString(array));
                                 try {
-                                        BinarySearch binarySearch = new BinarySearch();
                                         int index = binarySearch.search(array, number);
                                         System.out.println(number + " is found at the index " + index);
                                 } catch (NumberNotFoundException e) {
